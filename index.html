@@ -20,9 +20,28 @@
   </head>
   <body class="flex flex-col bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB] p-4">
     <div
-      id="footer-container"
-      class="grow mb-11 rounded drop-shadow bg-white"
-    ></div>
+      id="footerContainer"
+      class="flex flex-col grow mb-11 rounded drop-shadow bg-white py-12 gap-12"
+    >
+      <div
+        id="newsletterContainer"
+        class="gap-16 px-4 border-2 border-green-300"
+      >
+        <div id="newsletterTextContainer" class="flex flex-col gap-2">
+          <div class="text-xl font-semibold text-primary-900">
+            Join our newsletter
+          </div>
+          <div class="text-base text-neutral-600">
+            We'll send you a nice letter once per week. No spam.
+          </div>
+        </div>
+        <div id="newsletterInputContainer" class="flex flex-col gap-4"></div>
+      </div>
+      <div
+        id="linksContainer"
+        class="grow gap-12 px-4 border-2 border-blue-200"
+      ></div>
+    </div>
     <div class="credits left-6 bottom-6 fixed">
       A challenge by
       <a
