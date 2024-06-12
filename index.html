@@ -33,10 +33,16 @@
           </div>
         </div>
         <div id="newsletterInputContainer" class="flex flex-col gap-4">
-          <input
-            placeholder="Enter your email"
-            class="gap-2 px-3.5 py-2.5 bg-neutral-50 border-1 border-neutral-200 rounded placeholder-neutral-500 text-neutral-900 focus:outline-none focus:outline-1 focus:outline-indigo-900 focus:ring-2 focus:ring-indigo-100 focus:ring-offset-4 focus:placeholder-neutral-900 disabled:border-[#F5F5F5] disabled:placeholder-neutral-400"
-          />
+          <div id="inputContainer" class="flex flex-col gap-1.5">
+            <input
+              placeholder="Enter your email"
+              class="gap-2 px-3.5 py-2.5 bg-neutral-50 border-1 border-neutral-200 rounded placeholder-neutral-500 text-neutral-900 focus:outline-none focus:outline-1 focus:outline-indigo-900 focus:ring-2 focus:ring-indigo-100 focus:ring-offset-4 focus:placeholder-neutral-900 disabled:border-[#F5F5F5] disabled:placeholder-neutral-400"
+            />
+            <div class="hidden text-sm text-red-600">
+              Please enter a valid email address.
+            </div>
+          </div>
+
           <button
             class="gap-2 px-3.5 py-2.5 bg-indigo-700 text-white rounded drop-shadow hover:bg-[#3730A3] focus:bg-[#3730A3] focus:ring focus:ring-indigo-100 disabled:bg-[#F5F5F5] disabled:text-neutral-400"
           >
