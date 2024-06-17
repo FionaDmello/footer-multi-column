@@ -21,11 +21,9 @@
   <body class="flex bg-gradient-to-br from-[#F9FAFB] to-[#D2D6DB] p-4">
     <div
       id="footerContainer"
-      class="mb-11 flex flex-col grow rounded drop-shadow bg-white z-10 md:py-2 md:rounded-md"
+      class="mb-11 flex flex-col grow rounded drop-shadow bg-white z-10 md:py-2 md:rounded-md md:place-content-center"
     >
-      <div
-        class="grow flex flex-col py-12 gap-12 md:gap-16 md:py-16 md:justify-center md:align-middle border-2 border-pink-400"
-      >
+      <div class="grow flex flex-col py-12 gap-12 md:grow-0 md:gap-16 md:py-16">
         <div id="newsletterContainer" class="flex flex-col gap-8 px-4 md:gap-5">
           <div id="newsletterTextContainer" class="flex flex-col gap-2">
             <div class="text-xl font-semibold text-primary-900">
@@ -42,7 +40,7 @@
             <div id="inputContainer" class="grow flex flex-col gap-1.5">
               <input
                 placeholder="Enter your email"
-                class="gap-2 px-3.5 py-2.5 bg-neutral-50 border-1 border-neutral-200 rounded placeholder-neutral-500 text-neutral-900 focus:outline-none focus:outline-1 focus:outline-indigo-900 focus:ring-2 focus:ring-indigo-100 focus:ring-offset-4 focus:placeholder-neutral-900 disabled:border-[#F5F5F5] disabled:placeholder-neutral-400"
+                class="gap-2 px-3.5 py-2.5 bg-neutral-50 border-[1px] border-neutral-200 rounded placeholder-neutral-500 text-neutral-900 focus:outline-none focus:outline-1 focus:outline-indigo-900 focus:ring-2 focus:ring-indigo-100 focus:ring-offset-4 focus:placeholder-neutral-900 disabled:border-[#F5F5F5] disabled:placeholder-neutral-400"
               />
               <div class="hidden text-sm text-red-600">
                 Please enter a valid email address.
@@ -60,94 +58,95 @@
           id="linksContainer"
           class="grow gap-12 px-4 flex flex-col md:gap-16"
         >
-          <div
-            id="hyperlinkContentContainer"
-            class="flex flex-col gap-8 md:gap-12 md:flex-row md:flex-wrap md:gap-12"
-          >
+          <div id="hyperlinkContentContainer" class="flex md:gap-12">
             <div
-              id="hyperlinkTextContainer"
-              class="flex flex-col gap-6 md:basis-1/2 md:gap-8"
-            >
-              <div>
-                <img src="./img//abstractly-logo.png" alt="abstractly-logo" />
-              </div>
-              <div class="text-base text-neutral-600">
-                Craft stunning style journeys that weave more joy into every
-                thread.
-              </div>
-            </div>
-            <div
-              id="hyperlinkContainer"
-              class="flex flex-col gap-8 md:grow md:flex-row md:gap-12"
+              class="flex flex-col gap-8 md:flex-row md:flex-wrap md:gap-x-16 md:gap-y-12"
             >
               <div
-                id="categoriesContainer"
-                class="flex flex-col gap-4 md:basis-1/2"
+                id="hyperlinkTextContainer"
+                class="flex flex-col gap-6 md:gap-8 md:basis-1/2 md:grow-0"
               >
-                <div class="text-sm text-neutral-500">SHOP CATEGORIES</div>
-                <div class="flex flex-col gap-3">
-                  <div>
-                    <button
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Unisex
-                    </button>
-                  </div>
-                  <div>
-                    <button
-                      href="/"
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Women
-                    </button>
-                  </div>
-                  <div>
-                    <button
-                      href="/"
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Men
-                    </button>
-                  </div>
+                <div>
+                  <img src="./img//abstractly-logo.png" alt="abstractly-logo" />
+                </div>
+                <div class="text-base text-neutral-600">
+                  Craft stunning style journeys that weave more joy into every
+                  thread.
                 </div>
               </div>
               <div
-                id="collectionsContainer"
-                class="flex flex-col gap-4 md:basis-1/2"
+                id="hyperlinkContainer"
+                class="flex flex-col gap-8 md:grow md:grid md:grid-cols-6 basis-2/3 md:gap-12"
               >
-                <div class="text-sm text-neutral-500">SHOP COLLECTIONS</div>
-                <div class="flex flex-col gap-3">
-                  <div>
-                    <button
-                      href="/"
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Latest Arrivals
-                    </button>
+                <div
+                  id="categoriesContainer"
+                  class="flex flex-col gap-4 md:col-span-3"
+                >
+                  <div class="text-sm text-neutral-500">SHOP CATEGORIES</div>
+                  <div class="flex flex-col gap-3">
+                    <div>
+                      <button
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Unisex
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        href="/"
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Women
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        href="/"
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Men
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <button
-                      href="/"
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Urban Oasis
-                    </button>
-                  </div>
-                  <div>
-                    <button
-                      href="/"
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Cozy Comfort
-                    </button>
-                  </div>
-                  <div>
-                    <button
-                      href="/"
-                      class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
-                    >
-                      Fresh Fusion
-                    </button>
+                </div>
+                <div
+                  id="collectionsContainer"
+                  class="flex flex-col gap-4 md:col-span-3"
+                >
+                  <div class="text-sm text-neutral-500">SHOP COLLECTIONS</div>
+                  <div class="flex flex-col gap-3">
+                    <div>
+                      <button
+                        href="/"
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Latest Arrivals
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        href="/"
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Urban Oasis
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        href="/"
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Cozy Comfort
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        href="/"
+                        class="text-neutral-600 hover:text-[#171717] focus:text-[#171717] focus:ring-4 focus:ring-indigo-100 focus:rounded disabled:text-neutral-400"
+                      >
+                        Fresh Fusion
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -155,7 +154,7 @@
           </div>
           <div
             id="socialmediaContainer"
-            class="flex flex-col gap-8 pt-8 border-t-[1px] border-neutral-200"
+            class="flex flex-col gap-8 pt-8 border-t-[1px] border-neutral-200 md:flex-row"
           >
             <div class="text-base text-neutral-500">
               © 2024 StyleNest, Inc. All rights reserved.
