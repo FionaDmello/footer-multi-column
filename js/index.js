@@ -3,14 +3,59 @@
 const form = document.getElementById("newsletterInputForm");
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault();
   const email = document.getElementById("email");
-  console.log("here", email.validity);
-
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I am expecting an email address!");
-    email.reportValidity();
+  const validityContainer = document.getElementById("validityMsgContainer");
+  if (email.validity.valueMissing) {
+    validityContainer.innerHTML = "Email address is required";
+    email.classList.remove(
+      "focus:outline-none",
+      "focus:outline-1",
+      "focus:outline-indigo-900",
+      "focus:ring-2",
+      "focus:ring-indigo-100",
+      "focus:ring-offset-4"
+    );
+    email.classList.add(
+      "focus:outline-none",
+      "focus:outline-1 focus:outline-[#DC2626]",
+      "focus:ring-2",
+      "focus:ring-red-200",
+      "focus:ring-offset-4"
+    );
+  } else if (email.validity.typeMismatch) {
+    validityContainer.innerHTML = "Please enter a valid email address";
+    email.classList.remove(
+      "focus:outline-none",
+      "focus:outline-1",
+      "focus:outline-indigo-900",
+      "focus:ring-2",
+      "focus:ring-indigo-100",
+      "focus:ring-offset-4"
+    );
+    email.classList.add(
+      "focus:outline-none",
+      "focus:outline-1 focus:outline-[#DC2626]",
+      "focus:ring-2",
+      "focus:ring-red-200",
+      "focus:ring-offset-4"
+    );
   } else {
-    email.setCustomValidity("");
-    email.reportValidity();
+    validityContainer.innerHTML = "";
+    email.classList.add(
+      "focus:outline-none",
+      "focus:outline-1",
+      "focus:outline-indigo-900",
+      "focus:ring-2",
+      "focus:ring-indigo-100",
+      "focus:ring-offset-4"
+    );
+    email.classList.remove(
+      "focus:outline-none",
+      "focus:outline-1 focus:outline-[#DC2626]",
+      "focus:ring-2",
+      "focus:ring-red-200",
+      "focus:ring-offset-4"
+    );
   }
 });
