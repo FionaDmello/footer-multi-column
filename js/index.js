@@ -18,7 +18,8 @@ form.addEventListener("submit", (event) => {
     );
     email.classList.add(
       "focus:outline-none",
-      "focus:outline-1 focus:outline-[#DC2626]",
+      "focus:outline-1",
+      "focus:outline-[#DC2626]",
       "focus:ring-2",
       "focus:ring-red-200",
       "focus:ring-offset-4"
@@ -35,7 +36,8 @@ form.addEventListener("submit", (event) => {
     );
     email.classList.add(
       "focus:outline-none",
-      "focus:outline-1 focus:outline-[#DC2626]",
+      "focus:outline-1",
+      "focus:outline-[#DC2626]",
       "focus:ring-2",
       "focus:ring-red-200",
       "focus:ring-offset-4"
@@ -52,7 +54,8 @@ form.addEventListener("submit", (event) => {
     );
     email.classList.remove(
       "focus:outline-none",
-      "focus:outline-1 focus:outline-[#DC2626]",
+      "focus:outline-1",
+      "focus:outline-[#DC2626]",
       "focus:ring-2",
       "focus:ring-red-200",
       "focus:ring-offset-4"
