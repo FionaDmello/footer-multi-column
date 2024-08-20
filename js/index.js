@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
       "focus:ring-offset-4"
     );
   } else if (email.validity.typeMismatch) {
-    validityContainer.innerHTML = "Please enter a valid email address";
+    validityContainer.innerHTML = "Please enter a valid email address.";
     email.classList.remove(
       "focus:outline-none",
       "focus:outline-1",
