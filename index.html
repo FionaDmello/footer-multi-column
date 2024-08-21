@@ -23,20 +23,16 @@
   >
     <div
       id="toastContainer"
-      class="absolute z-40 inset-x-4 top-10 md:top-9 lg:top-10 gap-x-3 pl-1 pr-2.5 py-1 rounded-full bg-green-50 flex items-center max-w-fit mx-auto"
+      class="absolute z-40 inset-x-4 top-10 md:top-9 lg:top-10 gap-x-3 pl-1 pr-2.5 py-1 rounded-full flex items-center max-w-fit mx-auto"
     >
       <p
         id="toastStatus"
-        class="px-2.5 bg-white py-0.5 rounded-full text-sm text-green-700 drop-shadow"
-      >
-        Success
-      </p>
+        class="px-2.5 bg-white py-0.5 rounded-full text-sm drop-shadow"
+      ></p>
       <p
         id="toastMsg"
         class="gap-x-1 text-sm text-green-700 basis-2/3 md:basis-full"
-      >
-        Subscription succesful! Please check your email to confirm.
-      </p>
+      ></p>
     </div>
     <div
       id="footerContainer"
@@ -78,7 +74,7 @@
             </div>
 
             <button
-              class="flex gap-2 px-3.5 py-2.5 bg-indigo-700 text-white justify-center rounded drop-shadow hover:bg-[#3730A3] focus:bg-[#3730A3] focus:ring focus:ring-indigo-100 disabled:bg-[#F5F5F5] disabled:text-neutral-400 md:gap-1 xl:max-h-11"
+              class="flex gap-2 px-3.5 py-2.5 bg-indigo-700 text-white justify-center rounded drop-shadow hover:bg-[#3730A3] focus:bg-[#3730A3] focus:ring focus:ring-indigo-100 disabled:bg-[#F5F5F5] disabled:text-neutral-400 md:gap-1 md:max-h-11"
               type="sumbit"
             >
               Subscribe
@@ -188,7 +184,14 @@
             class="flex flex-col gap-8 pt-8 border-t-[1px] border-neutral-200 md:flex-row xl:justify-between"
           >
             <div class="text-base text-neutral-500">
-              © 2024 StyleNest, Inc. All rights reserved.
+              ©
+              <span id="copyrightYear">
+                <script>
+                  document.getElementById("copyrightYear").innerHTML =
+                    new Date().getFullYear();
+                </script>
+              </span>
+              StyleNest, Inc. All rights reserved.
             </div>
             <div>
               <div class="flex gap-6">
